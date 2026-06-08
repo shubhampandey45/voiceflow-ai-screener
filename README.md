@@ -5,7 +5,7 @@
 [![Database](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](#-database-schema)
 [![Deployment](https://img.shields.io/badge/Deploy-Hugging_Face_Spaces-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://shubhampandey45-voiceflowai.hf.space/docs)
 
-A state-of-the-art, voice-first candidate screening and productivity platform. VoiceFlow AI captures audio spoken by recruiters or recruiters' voice notes, processes the audio stream to text, extracts structured JSON profiles using Generative AI, and persists them into a PostgreSQL database in real-time.
+VoiceFlow AI captures audio spoken by recruiters or recruiters' voice notes, processes the audio stream to text, extracts structured JSON profiles using Generative AI, and persists them into a PostgreSQL database in real-time.
 
 ---
 
@@ -14,7 +14,6 @@ A state-of-the-art, voice-first candidate screening and productivity platform. V
 The backend service is containerized using Docker and deployed live in a production environment:
 
 * 📄 **Swagger Interactive API Docs**: [https://shubhampandey45-voiceflowai.hf.space/docs](https://shubhampandey45-voiceflowai.hf.space/docs)
-* ⚙️ **System Health Status**: [https://shubhampandey45-voiceflowai.hf.space/health](https://shubhampandey45-voiceflowai.hf.space/health)
 
 ---
 
@@ -66,13 +65,3 @@ CREATE INDEX idx_candidate_profiles_created_at ON candidate_profiles (created_at
 CREATE INDEX idx_candidate_profiles_name ON candidate_profiles (candidate_name);
 ```
 
----
-
-## 💼 How this Meets the Job Requirements
-
-This project showcases production-level engineering capabilities across a broad full-stack environment:
-
-1. **Full-Stack Ownership**: Built from absolute scratch including database seeding scripts, local environment settings, clean API routers, state notifications, custom Flutter widgets, Dockerfile builds, and cloud deployment pipelines.
-2. **SQL Mastery & Database Design**: Employs SQLAlchemy ORM to manage dynamic migrations. Implemented custom schema types to natively handle PostgreSQL text arrays (`TEXT[]`) on production clouds while converting to serial JSON strings on SQLite locally for testing. Optimizes data lookups with targeted compound database index configurations.
-3. **API Orchestration**: Combines multi-stage, high-throughput external API requests. Coordinates rapid pipeline transfers of binary audio data streams from the client device through Groq Whisper translation, Gemini metadata extraction, and Postgres storage.
-4. **Cross-Platform Mobile Delivery**: Utilizes Flutter dependency overriding patterns to ensure seamless hardware interface integration (Microphone recording stream codecs) while preserving clean, Material 3 Dark theme aesthetics.
