@@ -17,6 +17,16 @@ The backend service is containerized using Docker and deployed live in a product
 
 ---
 
+## 📱 Application Screenshots
+
+Here is a visual walk-through of the mobile client screen states:
+
+| 1. Voice Note Capture | 2. AI Processing State | 3. Structured Profiles List |
+| :---: | :---: | :---: |
+| <img src="screenshots/recording.png" width="250" alt="Voice Note Capture"/> | <img src="screenshots/processing.png" width="250" alt="AI Processing State"/> | <img src="screenshots/profiles.png" width="250" alt="Structured Profiles List"/> |
+
+---
+
 ## 🛠️ Tech Stack & Architecture
 
 VoiceFlow AI is architected as a clean monorepo separating a high-performance RESTful API and a cross-platform mobile application.
