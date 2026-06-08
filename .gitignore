@@ -1,0 +1,90 @@
+# ==========================================
+# Monorepo Root .gitignore
+# ==========================================
+
+# --- System & OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- IDEs & Editors ---
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+
+# --- Environment Variable & Secret Files ---
+.env
+.env.*
+*.env
+
+# ==========================================
+# Python Backend (applies globally/within /backend)
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Packaging & distribution
+backend/dist/
+backend/build/
+backend/*.egg-info/
+
+# Local SQLite databases
+backend/*.db
+backend/*.sqlite3
+*.db
+*.sqlite3
+
+# ==========================================
+# Flutter Mobile (applies to /mobile)
+# ==========================================
+mobile/build/
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/..flutter-plugins-dependencies
+mobile/.flutter-plugins-dependencies
+mobile/.pub-cache/
+mobile/.packages
+
+# Generated API documentation
+mobile/doc/api/
+
+# Android-specific local settings & signing secrets
+mobile/android/local.properties
+mobile/android/key.properties
+*.keystore
+*.jks
+
+# iOS-specific build configs & dependencies
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Flutter/flutter_export_environment.sh
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/ios/Flutter/App.framework
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+
+# Desktop-specific ephemeral builds
+mobile/windows/flutter/
+mobile/macos/Flutter/ephemeral/
+mobile/linux/flutter/
+
+# Local Flutter debug profiles & logs
+mobile/*.log
+mobile/.vscode/
+mobile/.idea/
