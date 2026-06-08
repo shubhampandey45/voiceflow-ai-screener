@@ -23,9 +23,9 @@ Here is a visual walk-through of the mobile client screen states:
 
 | 1. Voice Note Capture | 2. AI Processing State | 3. Structured Profiles List |
 | :---: | :---: | :---: |
-| <img src="screenshots/recording.png" width="250" alt="Voice Note Capture"/> | <img src="screenshots/processing.png" width="250" alt="AI Processing State"/> | <img src="screenshots/profiles.png" width="250" alt="Structured Profiles List"/> |
+| <img src="https://github.com/user-attachments/assets/0fd2bf6f-3353-4123-9835-089ed031da6b" width="250" alt="Voice Note Capture"/> | <img src="https://github.com/user-attachments/assets/4d0534b1-09f5-424f-a1a7-0e0f9353babb" width="250" alt="AI Processing State"/> | <img src="https://github.com/user-attachments/assets/86d87e3b-9303-4a58-9ec8-629d789ace8e" width="250" alt="Structured Profiles List"/> |
 
----
+
 
 ## 🛠️ Tech Stack & Architecture
 
